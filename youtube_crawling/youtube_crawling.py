@@ -10,7 +10,7 @@ print("#"*100)
 # print(title.text)
 print("-"*50)
 
-driver.implicitly_wait(10)
+driver.implicitly_wait(100)
 
 chats = driver.find_elements(by=By.CLASS_NAME, value="style-scope yt-live-chat-item-list-renderer")
 for chat in chats:
